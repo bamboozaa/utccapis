@@ -32,6 +32,6 @@ class ProductRepository implements ProductRepositoryInterface
     }
 
     public function delete($id) {
-            Product::destroy($data);
+            return Product::destroy($id);
     }
 }
