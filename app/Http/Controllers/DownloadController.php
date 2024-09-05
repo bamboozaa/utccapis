@@ -55,7 +55,7 @@ class DownloadController extends Controller
              $download = $this->downloadRepositoryInterface->store($details);
 
              DB::commit();
-             return ApiResponseClass::sendResponse(new DownloadResource($Download),'Download Create Successful',201);
+             return ApiResponseClass::sendResponse(new DownloadResource($download),'Download Create Successful',201);
 
         }catch(\Exception $ex){
             return ApiResponseClass::rollback($ex);
