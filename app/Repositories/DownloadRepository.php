@@ -32,6 +32,6 @@ class DownloadRepository implements DownloadRepositoryInterface
     }
 
     public function delete($id){
-       Download::destroy($id);
+       return Download::destroy($id);
     }
 }
