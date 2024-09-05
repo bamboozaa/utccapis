@@ -23,9 +23,9 @@ class DownloadController extends Controller
      */
     public function index()
     {
-        $data = $this->downloadRepositoryInterface->index();
+        // $data = $this->downloadRepositoryInterface->index();
 
-        return ApiResponseClass::sendResponse(DownloadResource::collection($data),'',200);
+        // return ApiResponseClass::sendResponse(DownloadResource::collection($data),'',200);
     }
 
     /**
