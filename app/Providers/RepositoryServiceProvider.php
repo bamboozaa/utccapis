@@ -7,6 +7,8 @@ use App\Interfaces\ProductRepositoryInterface;
 use App\Repositories\ProductRepository;
 use App\Interfaces\DownloadRepositoryInterface;
 use App\Repositories\DownloadRepository;
+use App\Interfaces\Competency01RepositoryInterface;
+use App\Repositories\Competency01Repository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
@@ -17,6 +19,7 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         $this->app->bind(ProductRepositoryInterface::class,ProductRepository::class);
         $this->app->bind(DownloadRepositoryInterface::class,DownloadRepository::class);
+        $this->app->bind(Competency01RepositoryInterface::class,Competency01Repository::class);
     }
 
     /**
