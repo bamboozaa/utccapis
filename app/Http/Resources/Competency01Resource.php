@@ -14,11 +14,6 @@ class Competency01Resource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return [
-            'id' =>$this->id,
-            'username' => $this->username,
-            'department' => $this->department,
-            'round' => $this->round,
-        ];
+        return parent::toArray($request);
     }
 }
