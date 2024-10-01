@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Competency01;
-use App\Interfaces\Competency01RepositoryInterface;
+use App\Interfaces\RepositoryInterface;
 
 class Competency01Repository
 {
