@@ -44,7 +44,7 @@ class Competency01Controller extends Controller
         $details = parent::toArray($request);
         DB::beginTransaction();
         try{
-             $competency01 = $this->RepositoryInterface->store($details);
+             $competency01 = $this->competency01RepositoryInterface->store($details);
 
              DB::commit();
              return ApiResponseClass::sendResponse(new Competency01Resource($competency01),'Competency Create Successful',201);
