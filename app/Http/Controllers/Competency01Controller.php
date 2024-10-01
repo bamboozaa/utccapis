@@ -12,18 +12,18 @@ use Illuminate\Support\Facades\DB;
 
 class Competency01Controller extends Controller
 {
-    private RepositoryInterface $RepositoryInterface;
+    private RepositoryInterface $competency01RepositoryInterface;
 
-    public function __construct(RepositoryInterface $RepositoryInterface)
+    public function __construct(RepositoryInterface $competency01RepositoryInterface)
     {
-        $this->RepositoryInterface = $RepositoryInterface;
+        $this->competency01RepositoryInterface = $competency01RepositoryInterface;
     }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = $this->RepositoryInterface->index();
+        $data = $this->competency01RepositoryInterface->index();
 
         return ApiResponseClass::sendResponse(Competency01Resource::collection($data),'',200);
     }

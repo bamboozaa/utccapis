@@ -14,4 +14,4 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('/products',ProductController::class);
 Route::apiResource('/downloads',DownloadController::class);
 Route::apiResource('/competency01',Competency01Controller::class);
-Route::apiResource('/competency02',Competency01Controller::class);
+Route::apiResource('/competency02',Competency02Controller::class);
