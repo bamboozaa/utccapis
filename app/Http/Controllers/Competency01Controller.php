@@ -41,11 +41,12 @@ class Competency01Controller extends Controller
      */
     public function store(StoreCompetency01Request $request)
     {
-        $details =[
-            'username' => $request->username,
-            'department' => $request->department,
-            'round' => $request->round,
-        ];
+        // $details =[
+        //     'username' => $request->username,
+        //     'department' => $request->department,
+        //     'round' => $request->round,
+        // ];
+        $details = parent::toArray($request);
         DB::beginTransaction();
         try{
              $competency01 = $this->competency01RepositoryInterface->store($details);
