@@ -5,16 +5,17 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCompetency02Request;
 use App\Http\Requests\UpdateCompetency02Request;
 use App\Models\Competency02;
-use App\Interfaces\RepositoryInterface;
+// use App\Interfaces\RepositoryInterface;
+use App\Interfaces\Competency02RepositoryInterface;
 use App\Classes\ApiResponseClass;
 use App\Http\Resources\Competency02Resource;
 use Illuminate\Support\Facades\DB;
 
 class Competency02Controller extends Controller
 {
-    private RepositoryInterface $competency02RepositoryInterface;
+    private Competency02RepositoryInterface $competency02RepositoryInterface;
 
-    public function __construct(RepositoryInterface $competency02RepositoryInterface)
+    public function __construct(Competency02RepositoryInterface $competency02RepositoryInterface)
     {
         $this->competency02RepositoryInterface = $competency02RepositoryInterface;
     }

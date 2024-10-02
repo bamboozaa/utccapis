@@ -3,9 +3,9 @@
 namespace App\Repositories;
 
 use App\Models\Competency02;
-use App\Interfaces\RepositoryInterface;
+use App\Interfaces\Competency02RepositoryInterface;
 
-class Competency02Repository implements RepositoryInterface
+class Competency02Repository implements Competency02RepositoryInterface
 {
     /**
      * Create a new class instance.

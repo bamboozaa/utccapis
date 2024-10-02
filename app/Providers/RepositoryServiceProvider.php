@@ -8,6 +8,7 @@ use App\Repositories\ProductRepository;
 use App\Interfaces\DownloadRepositoryInterface;
 use App\Repositories\DownloadRepository;
 use App\Interfaces\RepositoryInterface;
+use App\Interfaces\Competency02RepositoryInterface;
 use App\Repositories\Competency01Repository;
 use App\Repositories\Competency02Repository;
 
@@ -21,7 +22,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(ProductRepositoryInterface::class,ProductRepository::class);
         $this->app->bind(DownloadRepositoryInterface::class,DownloadRepository::class);
         $this->app->bind(RepositoryInterface::class,Competency01Repository::class);
-        // $this->app->bind(RepositoryInterface::class,Competency02Repository::class);
+        $this->app->bind(Competency02RepositoryInterface::class,Competency02Repository::class);
     }
 
     /**
