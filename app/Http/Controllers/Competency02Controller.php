@@ -5,15 +5,27 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCompetency02Request;
 use App\Http\Requests\UpdateCompetency02Request;
 use App\Models\Competency02;
+use App\Interfaces\RepositoryInterface;
+use App\Classes\ApiResponseClass;
+use App\Http\Resources\Competency02Resource;
+use Illuminate\Support\Facades\DB;
 
 class Competency02Controller extends Controller
 {
+    private RepositoryInterface $competency02RepositoryInterface;
+
+    public function __construct(RepositoryInterface $competency02RepositoryInterface)
+    {
+        $this->competency02RepositoryInterface = $competency02RepositoryInterface;
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $data = $this->competency02RepositoryInterface->index();
+
+        return ApiResponseClass::sendResponse(Competency02Resource::collection($data),'',200);
     }
 
     /**
