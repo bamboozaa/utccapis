@@ -28,9 +28,9 @@ class StoreDownloadRequest extends FormRequest
             'last_name' => 'required',
             'email' => 'required',
             'phone_number' => 'required',
-            'postal_code' => 'required',
+            // 'postal_code' => 'required',
             'is_consent' => 'required',
-            'course_code' => 'required',
+            // 'course_code' => 'required',
         ];
     }
 

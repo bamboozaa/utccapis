@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email');
             $table->string('phone_number');
-            $table->string('postal_code');
+            $table->string('postal_code')->nullable();
             $table->boolean('is_consent')->default(false);
-            $table->string('course_code');
+            $table->string('course_code')->nullable();
             $table->timestamps();
         });
     }
