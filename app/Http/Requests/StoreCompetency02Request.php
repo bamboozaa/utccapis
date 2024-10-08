@@ -25,7 +25,8 @@ class StoreCompetency02Request extends FormRequest
     {
         return [
             'username' => 'required',
-            'department' => 'required',
+            'dep_id' => 'required',
+            'section_id' => 'required',
             'round' => 'required',
         ];
     }

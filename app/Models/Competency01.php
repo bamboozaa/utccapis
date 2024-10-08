@@ -10,7 +10,8 @@ class Competency01 extends Model
     use HasFactory;
     protected $fillable = [
 		'username',
-		'department',
+		'dep_id',
+        'section_id',
         'round',
         'option1_1',
         'option1_2',

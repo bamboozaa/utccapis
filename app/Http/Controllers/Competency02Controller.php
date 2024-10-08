@@ -44,7 +44,8 @@ class Competency02Controller extends Controller
     {
         $details =[
             'username' => $request->username,
-            'department' => $request->department,
+            'dep_id' => $request->dep_id,
+            'section_id' => $request->section_id,
             'round' => $request->round,
             'option1_1' => $request->option1_1,
             'option1_2' => $request->option1_2,

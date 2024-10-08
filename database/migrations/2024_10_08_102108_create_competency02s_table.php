@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('competency02s', function (Blueprint $table) {
             $table->id();
             $table->string('username');
-            $table->string('department');
+            $table->string('dep_id');
+            $table->string('section_id');
             $table->string('round');
             $table->integer('option1_1')->nullable()->comment('1.1 สามารถใช้ความชำนาญในการพัฒนาการทำงานของตนเอง');
             $table->integer('option1_2')->nullable()->comment('1.2 สามารถแสดงความคิดเห็นหรือคำแนะนำในงานได้อย่างน่าเชื่อถือ');
