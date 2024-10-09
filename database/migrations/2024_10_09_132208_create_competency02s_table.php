@@ -70,6 +70,7 @@ return new class extends Migration
             $table->integer('option13_2')->nullable()->comment('13.2 แสดงความกระตือรือร้นและพร้อมที่จะเรียนรู้สิ่งใหม่ๆ');
             $table->integer('option13_3')->nullable()->comment('13.3 แสดงความตั้งใจที่จะพัฒนาตนเอง');
             $table->text('comment13')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

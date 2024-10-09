@@ -54,6 +54,7 @@ return new class extends Migration
             $table->integer('option10_2')->nullable()->comment('10.2 แสวงหาแนวทางการปรับปรุงพัฒนาการให้บริการที่ได้นำเสนอ และปฏิบัติงานตามคำมั่นสัญญาที่ให้กับลูกค้า ทั้งภายในและภายนอก');
             $table->integer('option10_3')->nullable()->comment('10.3 สนองความต้องการของลูกค้าด้วยความรวดเร็ว พร้อมทั้งสามารถเสนอทางเลือกต่าง ๆ ในการแก้ไขปัญหาของลูกค้า ทั้งภายในและภายนอก');
             $table->text('comment10')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }
