@@ -66,5 +66,6 @@ class Competency02 extends Model
         'option13_2',
         'option13_3',
         'comment13',
+        'status',
 	];
 }

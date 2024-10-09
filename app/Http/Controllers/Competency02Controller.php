@@ -100,6 +100,7 @@ class Competency02Controller extends Controller
             'option13_2' => $request->option13_2,
             'option13_3' => $request->option13_3,
             'comment13' => $request->comment13,
+            'status' => $request->status
         ];
         DB::beginTransaction();
         try{

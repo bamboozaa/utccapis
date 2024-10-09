@@ -50,5 +50,6 @@ class Competency01 extends Model
         'option10_2',
         'option10_3',
         'comment10',
+        'status',
 	];
 }

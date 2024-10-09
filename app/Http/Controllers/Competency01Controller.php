@@ -82,7 +82,8 @@ class Competency01Controller extends Controller
             'option10_1' => $request->option10_1,
             'option10_2' => $request->option10_2,
             'option10_3' => $request->option10_3,
-            'comment10' => $request->comment10
+            'comment10' => $request->comment10,
+            'status' => $request->status
         ];
         // $details = parent::toArray($request);
         DB::beginTransaction();
